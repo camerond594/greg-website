@@ -1,0 +1,9 @@
+Django==1.10
+pbr==1.10.0
+six==1.10.0
+stevedore==1.17.0
+virtualenv==15.0.3
+virtualenv-clone==0.2.6
+virtualenvwrapper==4.7.1
+whitenoise==3.2.1
+gunicorn==19.1.1

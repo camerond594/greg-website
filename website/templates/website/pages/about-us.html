@@ -1,0 +1,127 @@
+{% load static from staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Gregory C. Lazin</title>
+
+    <!-- Custom Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Goudy+Old+Style:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <!--<link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>-->
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}" />
+
+    <!--<link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>-->
+    <link rel="stylesheet" type="text/css" href="{% static 'font-awesome/css/font-awesome.min.css' %}" />
+
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/animate.min.css' %}" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/creative.css' %}" />
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top">
+
+    <header>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+
+        <div class="header-content">
+            <div class="header-content-inner">
+
+            <h1 style="margin-left: 25%; margin-right: 25%; font-size: 65px; -webkit-text-stroke: 0.35px black; text-shadow: 2px 2px 0 #000,
+                                                                                 -1px -1px 0 #000,
+                                                                                  1px -1px 0 #000,
+                                                                                  -1px 1px 0 #000,
+                                                                                   1px 1px 0 #000;">
+                <a href="{% url 'base_site' %}" style="font-size: 42px;">
+                Gregory C. Lazin
+                </a>
+            </h1>
+
+              <h2 style="font-size: 36px; -webkit-text-stroke: 0.35px black; text-shadow: 2px 2px 0 #000,
+                                                                                       -1px -1px 0 #000,
+                                                                                        1px -1px 0 #000,
+                                                                                        -1px 1px 0 #000,
+                                                                                         1px 1px 0 #000;">
+              Professional Law Corporation
+              </h2>
+
+                <h2 style="font-size: 44px; -webkit-text-stroke: 0.35px black; text-shadow: 2px 2px 0 #000,
+                                                                                         -1px -1px 0 #000,
+                                                                                          1px -1px 0 #000,
+                                                                                          -1px 1px 0 #000,
+                                                                                           1px 1px 0 #000;">About</h2>
+
+                <div id="about-container" style="width:150%;">
+
+                    <div style="width: 25%%; float: left;">
+                        <img src="{%  static 'img/greg.jpg' %}" alt="" style="height: 539.06px; width: 359.38px;">
+                    </div>
+
+                    <div style="width: 45%; float: left; margin-left: 3%;">
+                        <div class="opaque-verbiage-box">
+                            <h4 style="color: black;">{% autoescape off %}{{ verbiage.text }}{% endautoescape %}</h4>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div id="button-container" style="display: block;">
+
+                    <a href="{% url 'services' %}" class="btn btn-primary btn-xl page-scroll" style="height: 85px; width: 200px; margin-top: 4%;">
+                        <h4 style="margin-top: 12.5%; font-family: 'Gaudy Old Style', sans-serif; text-shadow: 0.5px 0.5px 0 #000,
+                                                                                             -1px -1px 0 #000,
+                                                                                              1px -1px 0 #000,
+                                                                                              -1px 1px 0 #000,
+                                                                                               1px 1px 0 #000;">
+                        Back
+                        </h4>
+                    </a>
+
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <!-- jQuery -->
+    <script src="{% static "js/jquery.js" %}"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="{% static "js/bootstrap.min.js" %}"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="{% static "js/jquery.easing.min.js" %}"></script>
+    <script src="{% static "js/jquery.fittext.js" %}"></script>
+    <script src="{% static "js/wow.min.js" %}"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="{% static "js/creative.js" %}"></script>
+
+    <!-- Contact Form JavaScript -->
+    <!-- Do not edit these files! In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
+    <script src="{% static "js/jqBootstrapValidation.js" %}"></script>
+    <script src="{% static "js/contact_me.js" %}"></script>
+
+</body>
+
+</html>
